@@ -1,0 +1,32 @@
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csprojAssemblyReference.cache
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Properties.Resources.resources
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.GenerateResource.cache
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CoreCompileInputs.cache
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe.config
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.pdb
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\MySql.Data.dll
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\MySql.Web.dll
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\MySql.Data.xml
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\bin\Debug\MySql.Web.xml
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CopyComplete
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.exe
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.pdb
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.MenuLogRej.resources
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form2.resources
+C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form3.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe.config
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.pdb
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\MySql.Data.xml
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\MySql.Web.xml
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csprojAssemblyReference.cache
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.MenuLogRej.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form2.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form3.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Properties.Resources.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.GenerateResource.cache
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CoreCompileInputs.cache
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CopyComplete
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.exe
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.pdb
