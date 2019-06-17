@@ -40,5 +40,11 @@ namespace Program_Walutowy
             this.Hide();
             Parent.ShowDialog();
         }
+
+        private void Back_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Parent.ShowDialog();
+        }
     }
 }

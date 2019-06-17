@@ -59,9 +59,9 @@ namespace Program_Walutowy
                         form2.JA.pln = mySqlDataReader.GetInt32(4);
                         form2.JA.data_rejestracji = mySqlDataReader.GetDateTime(5);
                         form2.JA.data_ostatniego_log = mySqlDataReader.GetDateTime(6);
-                        
+
+                        form2.wyswietl();
                         form2.ShowDialog();
-                        form2.SHOWWTFWTF();
                     }
                 }
                 mySqlConnection.Close();

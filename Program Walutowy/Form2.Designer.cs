@@ -34,6 +34,15 @@
             this.EmailS = new System.Windows.Forms.Label();
             this.LoginS = new System.Windows.Forms.Label();
             this.MoneyS = new System.Windows.Forms.Label();
+            this.Currency = new System.Windows.Forms.ListBox();
+            this.CurrencyLabel = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.DoTransaction = new System.Windows.Forms.Button();
+            this.ShowHistory = new System.Windows.Forms.Button();
+            this.Close = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // EMail
@@ -96,11 +105,83 @@
             this.MoneyS.Size = new System.Drawing.Size(114, 35);
             this.MoneyS.TabIndex = 7;
             // 
+            // Currency
+            // 
+            this.Currency.FormattingEnabled = true;
+            this.Currency.Location = new System.Drawing.Point(33, 57);
+            this.Currency.Name = "Currency";
+            this.Currency.Size = new System.Drawing.Size(408, 316);
+            this.Currency.TabIndex = 8;
+            // 
+            // CurrencyLabel
+            // 
+            this.CurrencyLabel.AutoSize = true;
+            this.CurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.CurrencyLabel.Location = new System.Drawing.Point(30, 41);
+            this.CurrencyLabel.Name = "CurrencyLabel";
+            this.CurrencyLabel.Size = new System.Drawing.Size(411, 13);
+            this.CurrencyLabel.TabIndex = 9;
+            this.CurrencyLabel.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.CurrencyLabel);
+            this.panel1.Controls.Add(this.Currency);
+            this.panel1.Location = new System.Drawing.Point(298, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(490, 389);
+            this.panel1.TabIndex = 10;
+            // 
+            // DoTransaction
+            // 
+            this.DoTransaction.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.DoTransaction.Location = new System.Drawing.Point(10, 16);
+            this.DoTransaction.Name = "DoTransaction";
+            this.DoTransaction.Size = new System.Drawing.Size(255, 54);
+            this.DoTransaction.TabIndex = 11;
+            this.DoTransaction.Text = "Wykonaj Tranzakcję";
+            this.DoTransaction.UseVisualStyleBackColor = true;
+            this.DoTransaction.MouseClick += new System.Windows.Forms.MouseEventHandler(this.DoTransaction_MouseClick);
+            // 
+            // ShowHistory
+            // 
+            this.ShowHistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.ShowHistory.Location = new System.Drawing.Point(10, 76);
+            this.ShowHistory.Name = "ShowHistory";
+            this.ShowHistory.Size = new System.Drawing.Size(255, 54);
+            this.ShowHistory.TabIndex = 12;
+            this.ShowHistory.Text = "Historia Tranzakcji";
+            this.ShowHistory.UseVisualStyleBackColor = true;
+            this.ShowHistory.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ShowHistory_MouseClick);
+            // 
+            // Close
+            // 
+            this.Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Close.Location = new System.Drawing.Point(10, 136);
+            this.Close.Name = "Close";
+            this.Close.Size = new System.Drawing.Size(255, 54);
+            this.Close.TabIndex = 13;
+            this.Close.Text = "Zamknij Program";
+            this.Close.UseVisualStyleBackColor = true;
+            this.Close.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Close_MouseClick);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.Close);
+            this.panel2.Controls.Add(this.ShowHistory);
+            this.panel2.Controls.Add(this.DoTransaction);
+            this.panel2.Location = new System.Drawing.Point(9, 51);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(289, 388);
+            this.panel2.TabIndex = 14;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.MoneyS);
             this.Controls.Add(this.LoginS);
             this.Controls.Add(this.EmailS);
@@ -109,6 +190,9 @@
             this.Controls.Add(this.EMail);
             this.Name = "Form2";
             this.Text = "Form2";
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -122,5 +206,12 @@
         private System.Windows.Forms.Label EmailS;
         private System.Windows.Forms.Label LoginS;
         private System.Windows.Forms.Label MoneyS;
+        private System.Windows.Forms.ListBox Currency;
+        private System.Windows.Forms.Label CurrencyLabel;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button DoTransaction;
+        private System.Windows.Forms.Button ShowHistory;
+        private System.Windows.Forms.Button Close;
+        private System.Windows.Forms.Panel panel2;
     }
 }

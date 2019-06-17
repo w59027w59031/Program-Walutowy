@@ -50,23 +50,14 @@ namespace Program_Walutowy
             }
             int licznik_pozycji = 0;
             int licznik_p_poz = 0;
-            foreach (string str1 in XMLStr.Split(new string[1] { "<pozycja>" }, StringSplitOptions.None))
+            foreach (string str2 in XMLStr.Split(new string[2] { "<pozycja>", "</pozycja>" }, StringSplitOptions.None))
             {
-                foreach (string str2 in str1.Split(new string[1] { "</pozycja>" }, StringSplitOptions.None))
+                if (str2.Contains("<"))
                 {
                     waluty[] wwaluty_tmp = new waluty[wwaluty.Length];
-                    /*for (int i = 0; i < wwaluty.Length-1; i++) {
-                        wwaluty_tmp[i] = new waluty();
-                        wwaluty_tmp[i].kod_wal = "";
-                        wwaluty_tmp[i].kurs_kup = 0;
-                        wwaluty_tmp[i].Kurs_sprz = 0;
-                        wwaluty_tmp[i].nazwa_wal = "";
-                        wwaluty_tmp[i].przelicznik = 0;
-                        wwaluty_tmp[i] = wwaluty[i];
-                    }*/
                     wwaluty_tmp = wwaluty;
-                    wwaluty = new waluty[wwaluty_tmp.Length+1];
-                    for (int i = 0; i < wwaluty.Length-1; i++)
+                    wwaluty = new waluty[wwaluty_tmp.Length + 1];
+                    for (int i = 0; i < wwaluty.Length - 1; i++)
                     {
                         wwaluty[i] = new waluty();
                         wwaluty[i].kod_waluty = "";
@@ -124,16 +115,23 @@ namespace Program_Walutowy
                             licznik_p_poz++;
                         }
                     }
+                    licznik_pozycji++;
                 }
-                licznik_pozycji++;
             }
-            for(int i=1;i<wwaluty.Length-1;i++)
-            {
-                MessageBox.Show(wwaluty[i].nazwa_waluty+@"
-"+wwaluty[i].przelicznik.ToString() + @"
+            for (int i = 1; i < wwaluty.Length - 1; i++)
+            {                
+                Currency.Items.Add(
+                    wwaluty[i].nazwa_waluty.ToString()+"  |  "+
+                    wwaluty[i].przelicznik.ToString() + "  |  " + 
+                    wwaluty[i].kod_waluty.ToString() + "  |  " + 
+                    wwaluty[i].kurs_kupna.ToString() + "  |  " + 
+                    wwaluty[i].kurs_sprzedazy.ToString()
+                    );
+                /*MessageBox.Show(wwaluty[i].nazwa_waluty + @"
+" + wwaluty[i].przelicznik.ToString() + @"
 " + wwaluty[i].kod_waluty + @"
 " + wwaluty[i].kurs_kupna.ToString() + @"
-" + wwaluty[i].kurs_sprzedazy.ToString());
+" + wwaluty[i].kurs_sprzedazy.ToString());*/
             }
 
 
@@ -175,10 +173,24 @@ namespace Program_Walutowy
             return "";
         }
 
-        public void SHOWWTFWTF()
+        private void DoTransaction_MouseClick(object sender, MouseEventArgs e)
         {
 
-            MessageBox.Show("Ja: " + JA.login);
+        }
+
+        private void ShowHistory_MouseClick(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void Close_MouseClick(object sender, MouseEventArgs e)
+        {
+            Application.Exit();
+        }
+        public void wyswietl() {
+            LoginS.Text = JA.login;
+            EmailS.Text = JA.email;
+            MoneyS.Text = JA.pln + "";
         }
     }
 }

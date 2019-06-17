@@ -37,6 +37,7 @@
             this.PasswdagIn = new System.Windows.Forms.TextBox();
             this.ComPassword = new System.Windows.Forms.Label();
             this.RejestAcc = new System.Windows.Forms.Button();
+            this.Back = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // EmailIn
@@ -116,7 +117,7 @@
             // RejestAcc
             // 
             this.RejestAcc.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.RejestAcc.Location = new System.Drawing.Point(344, 244);
+            this.RejestAcc.Location = new System.Drawing.Point(388, 244);
             this.RejestAcc.Name = "RejestAcc";
             this.RejestAcc.Size = new System.Drawing.Size(226, 54);
             this.RejestAcc.TabIndex = 10;
@@ -124,11 +125,23 @@
             this.RejestAcc.UseVisualStyleBackColor = true;
             this.RejestAcc.MouseClick += new System.Windows.Forms.MouseEventHandler(this.RejestAcc_MouseClick);
             // 
+            // Back
+            // 
+            this.Back.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Back.Location = new System.Drawing.Point(156, 244);
+            this.Back.Name = "Back";
+            this.Back.Size = new System.Drawing.Size(226, 54);
+            this.Back.TabIndex = 11;
+            this.Back.Text = "Powrót";
+            this.Back.UseVisualStyleBackColor = true;
+            this.Back.Click += new System.EventHandler(this.Back_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Back);
             this.Controls.Add(this.RejestAcc);
             this.Controls.Add(this.PasswdagIn);
             this.Controls.Add(this.ComPassword);
@@ -156,5 +169,6 @@
         private System.Windows.Forms.TextBox PasswdagIn;
         private System.Windows.Forms.Label ComPassword;
         private System.Windows.Forms.Button RejestAcc;
+        private System.Windows.Forms.Button Back;
     }
 }
