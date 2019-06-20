@@ -28,85 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.EMail = new System.Windows.Forms.Label();
-            this.LoginU = new System.Windows.Forms.Label();
-            this.Money = new System.Windows.Forms.Label();
-            this.EmailS = new System.Windows.Forms.Label();
-            this.LoginS = new System.Windows.Forms.Label();
-            this.MoneyS = new System.Windows.Forms.Label();
             this.Currency = new System.Windows.Forms.ListBox();
             this.CurrencyLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Balance = new System.Windows.Forms.ListBox();
             this.DoTransaction = new System.Windows.Forms.Button();
             this.ShowHistory = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.LogOut = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.Balance = new System.Windows.Forms.ListBox();
+            this.LoginS = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // EMail
-            // 
-            this.EMail.AutoSize = true;
-            this.EMail.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.EMail.Location = new System.Drawing.Point(12, 9);
-            this.EMail.Name = "EMail";
-            this.EMail.Size = new System.Drawing.Size(121, 39);
-            this.EMail.TabIndex = 1;
-            this.EMail.Text = "Email:";
-            // 
-            // LoginU
-            // 
-            this.LoginU.AutoSize = true;
-            this.LoginU.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LoginU.Location = new System.Drawing.Point(215, 9);
-            this.LoginU.Name = "LoginU";
-            this.LoginU.Size = new System.Drawing.Size(117, 39);
-            this.LoginU.TabIndex = 2;
-            this.LoginU.Text = "Login:";
-            // 
-            // Money
-            // 
-            this.Money.AutoSize = true;
-            this.Money.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Money.Location = new System.Drawing.Point(425, 9);
-            this.Money.Name = "Money";
-            this.Money.Size = new System.Drawing.Size(172, 39);
-            this.Money.TabIndex = 4;
-            this.Money.Text = "Gotówka:";
-            // 
-            // EmailS
-            // 
-            this.EmailS.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.EmailS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.EmailS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.EmailS.Location = new System.Drawing.Point(139, 9);
-            this.EmailS.Name = "EmailS";
-            this.EmailS.Size = new System.Drawing.Size(84, 35);
-            this.EmailS.TabIndex = 5;
-            // 
-            // LoginS
-            // 
-            this.LoginS.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.LoginS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.LoginS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.LoginS.Location = new System.Drawing.Point(320, 11);
-            this.LoginS.Name = "LoginS";
-            this.LoginS.Size = new System.Drawing.Size(99, 35);
-            this.LoginS.TabIndex = 6;
-            // 
-            // MoneyS
-            // 
-            this.MoneyS.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.MoneyS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.MoneyS.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.MoneyS.Location = new System.Drawing.Point(603, 11);
-            this.MoneyS.Name = "MoneyS";
-            this.MoneyS.Size = new System.Drawing.Size(114, 35);
-            this.MoneyS.TabIndex = 7;
             // 
             // Currency
             // 
@@ -136,6 +71,24 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(490, 389);
             this.panel1.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(25, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(411, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
+            // 
+            // Balance
+            // 
+            this.Balance.FormattingEnabled = true;
+            this.Balance.Location = new System.Drawing.Point(28, 30);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(408, 160);
+            this.Balance.TabIndex = 10;
             // 
             // DoTransaction
             // 
@@ -192,23 +145,15 @@
             this.LogOut.UseVisualStyleBackColor = true;
             this.LogOut.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LogOut_MouseClick);
             // 
-            // label1
+            // LoginS
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(25, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
-            // 
-            // Balance
-            // 
-            this.Balance.FormattingEnabled = true;
-            this.Balance.Location = new System.Drawing.Point(28, 30);
-            this.Balance.Name = "Balance";
-            this.Balance.Size = new System.Drawing.Size(408, 160);
-            this.Balance.TabIndex = 10;
+            this.LoginS.BackColor = System.Drawing.SystemColors.Control;
+            this.LoginS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LoginS.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.LoginS.Location = new System.Drawing.Point(-1, 0);
+            this.LoginS.Name = "LoginS";
+            this.LoginS.Size = new System.Drawing.Size(801, 39);
+            this.LoginS.TabIndex = 6;
             // 
             // Form2
             // 
@@ -217,30 +162,17 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.MoneyS);
             this.Controls.Add(this.LoginS);
-            this.Controls.Add(this.EmailS);
-            this.Controls.Add(this.Money);
-            this.Controls.Add(this.LoginU);
-            this.Controls.Add(this.EMail);
             this.Name = "Form2";
             this.Text = "Form2";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label EMail;
-        private System.Windows.Forms.Label LoginU;
-        private System.Windows.Forms.Label Money;
-        private System.Windows.Forms.Label EmailS;
-        private System.Windows.Forms.Label LoginS;
-        private System.Windows.Forms.Label MoneyS;
         private System.Windows.Forms.ListBox Currency;
         private System.Windows.Forms.Label CurrencyLabel;
         private System.Windows.Forms.Panel panel1;
@@ -251,5 +183,6 @@
         private System.Windows.Forms.Button LogOut;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox Balance;
+        private System.Windows.Forms.Label LoginS;
     }
 }

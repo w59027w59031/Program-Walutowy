@@ -23,7 +23,7 @@ namespace Program_Walutowy
             public float kurs_kupna;
             public float kurs_sprzedazy;
         }
-        waluty[] wwaluty = new waluty[0];
+        public waluty[] wwaluty = new waluty[0];
         public class LUZER
         {
             public string id;
@@ -182,12 +182,18 @@ namespace Program_Walutowy
 
         private void DoTransaction_MouseClick(object sender, MouseEventArgs e)
         {
-
+            this.Hide();
+            Form4 form4 = new Form4();
+            form4.Parent = this;
+            form4.Show();
         }
 
         private void ShowHistory_MouseClick(object sender, MouseEventArgs e)
         {
-
+            this.Hide();
+            Form5 form5 = new Form5();
+            form5.Parent = this;
+            form5.Show();
         }
 
         private void Close_MouseClick(object sender, MouseEventArgs e)
@@ -196,9 +202,7 @@ namespace Program_Walutowy
         }
         public void wyswietl()
         {
-            LoginS.Text = JA.login;
-            EmailS.Text = JA.email;
-            MoneyS.Text = JA.pln + "";
+            LoginS.Text = "Login: "+JA.login+" Email: "+ JA.email;
         }
 
         private void LogOut_MouseClick(object sender, MouseEventArgs e)

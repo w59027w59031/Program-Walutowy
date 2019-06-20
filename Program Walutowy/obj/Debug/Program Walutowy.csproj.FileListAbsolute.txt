@@ -31,3 +31,4 @@ D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walut
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.exe
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.pdb
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form4.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form5.resources

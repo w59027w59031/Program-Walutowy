@@ -45,6 +45,7 @@
             this.CurrencyIn.Name = "CurrencyIn";
             this.CurrencyIn.Size = new System.Drawing.Size(158, 160);
             this.CurrencyIn.TabIndex = 11;
+            this.CurrencyIn.SelectedIndexChanged += new System.EventHandler(this.CurrencyIn_SelectedIndexChanged);
             // 
             // CurrencyOut
             // 
@@ -53,10 +54,11 @@
             this.CurrencyOut.Name = "CurrencyOut";
             this.CurrencyOut.Size = new System.Drawing.Size(158, 160);
             this.CurrencyOut.TabIndex = 12;
+            this.CurrencyOut.SelectedIndexChanged += new System.EventHandler(this.CurrencyOut_SelectedIndexChanged);
             // 
             // MoneyIn
             // 
-            this.MoneyIn.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.MoneyIn.BackColor = System.Drawing.SystemColors.Control;
             this.MoneyIn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.MoneyIn.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MoneyIn.Location = new System.Drawing.Point(32, 184);
@@ -66,7 +68,7 @@
             // 
             // MoneyOut
             // 
-            this.MoneyOut.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.MoneyOut.BackColor = System.Drawing.SystemColors.Control;
             this.MoneyOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.MoneyOut.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MoneyOut.Location = new System.Drawing.Point(196, 184);
@@ -76,7 +78,7 @@
             // 
             // MoneyAEx
             // 
-            this.MoneyAEx.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.MoneyAEx.BackColor = System.Drawing.SystemColors.Control;
             this.MoneyAEx.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.MoneyAEx.ForeColor = System.Drawing.SystemColors.ControlText;
             this.MoneyAEx.Location = new System.Drawing.Point(196, 234);
@@ -91,6 +93,7 @@
             this.MoneyBEx.Name = "MoneyBEx";
             this.MoneyBEx.Size = new System.Drawing.Size(158, 47);
             this.MoneyBEx.TabIndex = 16;
+            this.MoneyBEx.TextChanged += new System.EventHandler(this.MoneyBEx_TextChanged);
             // 
             // CancelEx
             // 
