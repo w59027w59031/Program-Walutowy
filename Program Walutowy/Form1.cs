@@ -20,13 +20,11 @@ namespace Program_Walutowy
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void Rejestracja_Click(object sender, EventArgs e)
         {
+            /// <summary>
+            /// Funkcja ukrywa aktualny formularz i uruchamia Form3
+            /// </summary>
             this.Hide();
             Form3 form3 = new Form3();
             form3.Parent = this;
@@ -41,6 +39,9 @@ namespace Program_Walutowy
 
         private void Zaloguj_Click(object sender, EventArgs e)
         {
+            /// <summary>
+            /// Funkcja pobiera dane użytkownika na podstawie wprowadzonego loginu i hasła
+            /// </summary>
             try
             {
                 bool bylo = false;
@@ -86,6 +87,9 @@ namespace Program_Walutowy
 
         public void Wyloguj()
         {
+            /// <summary>
+            /// Funkcja przypisuje puste ciągi znaków do LoginInput i HasloInput
+            /// </summary>
             LoginInput.Text = "";
             HasloInput.Text = "";
         }

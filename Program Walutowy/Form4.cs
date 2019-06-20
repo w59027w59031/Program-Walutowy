@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -84,12 +85,18 @@ namespace Program_Walutowy
         public waluty[] wwaluty = new waluty[0];
         private void CancelEx_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja ukrywa aktualny formularz i wyświetla poprzedni
+            /// </summary>
             this.Hide();
             Parent.Show();
         }
 
         private void Exchange_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja aktualizuje ilości tabeli pieniadze i zapisuje informacje o przeprowadzonym działaniu w tabeli historia
+            /// </summary>
             try
             {
                 if (CzyJestLiczba(MoneyBEx.Text))
@@ -110,10 +117,8 @@ namespace Program_Walutowy
 
                             String CONNSTRING = "Server=remotemysql.com; Database=fXFbJYw3Cb; Uid=fXFbJYw3Cb; Password=tjV0Oa4Jhr; port=3306;";
                             MySqlConnection mySqlConnection = new MySqlConnection(CONNSTRING);
-                            MySqlCommand mySqlCommand = new MySqlCommand("select ilosc from pieniadze where id='" + UserId + "' and waluta ='" + CurrencyIn.SelectedItem + "'", mySqlConnection);
-                            MySqlDataReader mySqlDataReader;
                             mySqlConnection.Open();
-                            mySqlCommand.CommandText = "update pieniadze set ilosc=ilosc-" + MoneyBEx.Text.Replace(',', '.') + " where id='" + UserId + "' and waluta ='" + CurrencyIn.SelectedItem + "'";
+                            MySqlCommand mySqlCommand = new MySqlCommand("update pieniadze set ilosc=ilosc-" + MoneyBEx.Text.Replace(',', '.') + " where id='" + UserId + "' and waluta ='" + CurrencyIn.SelectedItem + "'");
                             mySqlCommand.ExecuteNonQuery();
                             mySqlCommand.CommandText = "update pieniadze set ilosc=ilosc+" + MoneyAEx.Text.Replace(',', '.') + " where id='" + UserId + "' and waluta ='" + CurrencyOut.SelectedItem + "'";
                             mySqlCommand.ExecuteNonQuery();
@@ -137,7 +142,9 @@ namespace Program_Walutowy
 
         private void CurrencyIn_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Po zmianie wybranej waluty
+            /// <summary>
+            /// Funkcja aktualizuje stan pola MoneyIn po zmianie wybranej waluty
+            /// </summary>
             try
             {
 
@@ -170,7 +177,9 @@ namespace Program_Walutowy
 
         private void CurrencyOut_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //Po zmianie wybranej waluty
+            /// <summary>
+            /// Funkcja aktualizuje stan pola MoneyOut po zmianie wybranej waluty
+            /// </summary>
             try
             {
 
@@ -203,6 +212,9 @@ namespace Program_Walutowy
 
         public bool CzyJestLiczba(string str)
         {
+            /// <summary>
+            /// Funkcja sprawdza, czy ciąg znaków jest liczbą, która zostanie poprawnie zinterpretowana przez bazę danych
+            /// </summary>
             int licznik = 0;
             foreach (char c in str)
             {
@@ -226,6 +238,9 @@ namespace Program_Walutowy
         }
         private void MoneyBEx_TextChanged(object sender, EventArgs e)
         {
+            /// <summary>
+            /// Funkcja wylicza ilość pieniedzy w docelowej walucie dla wartości podanej w polu MoneyBEx
+            /// </summary>
             if (CzyJestLiczba(MoneyBEx.Text))
             {
                 if (MoneyBEx.Text != null && MoneyBEx.Text != "" && MoneyBEx.Text.Length > 0)

@@ -134,7 +134,6 @@ namespace Program_Walutowy
 
             try
             {
-
                 string UserId = "";
                 foreach (var item in Application.OpenForms.OfType<MenuLogRej>())
                 {
@@ -164,24 +163,11 @@ namespace Program_Walutowy
             }
         }
 
-        private string GetChildren(XmlNode node, string element, string par)
-        {
-            if (node.LocalName == element)
-            {
-                foreach (string atrybut1 in node.InnerXml.Split(new string[1] { "<" + par + ">" }, StringSplitOptions.None))
-                {
-                    string atrybut2 = atrybut1.Split(new string[1] { "</" + par + ">" }, StringSplitOptions.None)[0];
-                    if (atrybut2 != null && atrybut2 != "" && atrybut2.Length > 0)
-                    {
-                        return atrybut2;
-                    }
-                }
-            }
-            return "";
-        }
-
         private void DoTransaction_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja ukrywa aktualny formularz i uruchamia Form4
+            /// </summary>
             this.Hide();
             Form4 form4 = new Form4();
             form4.Parent = this;
@@ -190,6 +176,9 @@ namespace Program_Walutowy
 
         private void ShowHistory_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja ukrywa aktualny formularz i uruchamia Form5
+            /// </summary>
             this.Hide();
             Form5 form5 = new Form5();
             form5.Parent = this;
@@ -198,15 +187,24 @@ namespace Program_Walutowy
 
         private void Close_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja zamyka aplikację
+            /// </summary>
             Application.Exit();
         }
         public void wyswietl()
         {
+            /// <summary>
+            /// Funkcja Przypisuje do pola texstowego LoginS wartości ze zmiennych klasy JA
+            /// </summary>
             LoginS.Text = "Login: "+JA.login+" Email: "+ JA.email;
         }
 
         private void LogOut_MouseClick(object sender, MouseEventArgs e)
         {
+            /// <summary>
+            /// Funkcja wybiera wszystkie otwarte MoenuLogRej i uruchamia w nich funkcję Wyloguj, a następnie wyświetla poprzedni formularz.
+            /// </summary>
             this.Hide();
             foreach (var item in Application.OpenForms.OfType<MenuLogRej>())
             {

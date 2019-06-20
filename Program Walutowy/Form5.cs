@@ -48,6 +48,9 @@ namespace Program_Walutowy
         public Form Parent;
         private void GoBack_Click(object sender, EventArgs e)
         {
+            /// <summary>
+            /// Funkcja ukrywa aktualny formularz i wyświetla poprzedni
+            /// </summary>
             this.Hide();
             Parent.Show();
         }

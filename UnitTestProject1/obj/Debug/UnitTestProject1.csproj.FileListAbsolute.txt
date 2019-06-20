@@ -1,0 +1,18 @@
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\obj\Debug\UnitTestProject1.csprojAssemblyReference.cache
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CoreCompileInputs.cache
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\UnitTestProject1.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\UnitTestProject1.pdb
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Program Walutowy.exe
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\MySql.Data.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Program Walutowy.pdb
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Program Walutowy.exe.config
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\obj\Debug\UnitTestProject1.csproj.CopyComplete
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\obj\Debug\UnitTestProject1.dll
+D:\Users\skfer\Desktop\Program Walutowy\UnitTestProject1\obj\Debug\UnitTestProject1.pdb

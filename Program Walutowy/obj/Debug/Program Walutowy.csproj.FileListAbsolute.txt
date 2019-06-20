@@ -18,17 +18,18 @@ C:\Users\chief12\Documents\Visual Studio 2017\Projects\Program Walutowy\Program 
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe.config
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.exe
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Program Walutowy.pdb
-D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\MySql.Data.xml
-D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\MySql.Web.xml
-D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csprojAssemblyReference.cache
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.MenuLogRej.resources
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form2.resources
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form3.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form4.resources
+D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form5.resources
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Properties.Resources.resources
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.GenerateResource.cache
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CoreCompileInputs.cache
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.csproj.CopyComplete
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.exe
 D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program Walutowy.pdb
-D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form4.resources
-D:\Users\skfer\Desktop\Program Walutowy\Program Walutowy\obj\Debug\Program_Walutowy.Form5.resources
