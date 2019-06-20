@@ -41,6 +41,9 @@
             this.ShowHistory = new System.Windows.Forms.Button();
             this.Close = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.LogOut = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Balance = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -108,16 +111,16 @@
             // Currency
             // 
             this.Currency.FormattingEnabled = true;
-            this.Currency.Location = new System.Drawing.Point(33, 57);
+            this.Currency.Location = new System.Drawing.Point(28, 212);
             this.Currency.Name = "Currency";
-            this.Currency.Size = new System.Drawing.Size(408, 316);
+            this.Currency.Size = new System.Drawing.Size(408, 160);
             this.Currency.TabIndex = 8;
             // 
             // CurrencyLabel
             // 
             this.CurrencyLabel.AutoSize = true;
             this.CurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.CurrencyLabel.Location = new System.Drawing.Point(30, 41);
+            this.CurrencyLabel.Location = new System.Drawing.Point(25, 196);
             this.CurrencyLabel.Name = "CurrencyLabel";
             this.CurrencyLabel.Size = new System.Drawing.Size(411, 13);
             this.CurrencyLabel.TabIndex = 9;
@@ -125,6 +128,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.Balance);
             this.panel1.Controls.Add(this.CurrencyLabel);
             this.panel1.Controls.Add(this.Currency);
             this.panel1.Location = new System.Drawing.Point(298, 51);
@@ -157,7 +162,7 @@
             // Close
             // 
             this.Close.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.Close.Location = new System.Drawing.Point(10, 136);
+            this.Close.Location = new System.Drawing.Point(10, 196);
             this.Close.Name = "Close";
             this.Close.Size = new System.Drawing.Size(255, 54);
             this.Close.TabIndex = 13;
@@ -167,6 +172,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.LogOut);
             this.panel2.Controls.Add(this.Close);
             this.panel2.Controls.Add(this.ShowHistory);
             this.panel2.Controls.Add(this.DoTransaction);
@@ -174,6 +180,35 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(289, 388);
             this.panel2.TabIndex = 14;
+            // 
+            // LogOut
+            // 
+            this.LogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.LogOut.Location = new System.Drawing.Point(10, 136);
+            this.LogOut.Name = "LogOut";
+            this.LogOut.Size = new System.Drawing.Size(255, 54);
+            this.LogOut.TabIndex = 14;
+            this.LogOut.Text = "Wyloguj";
+            this.LogOut.UseVisualStyleBackColor = true;
+            this.LogOut.MouseClick += new System.Windows.Forms.MouseEventHandler(this.LogOut_MouseClick);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(25, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(411, 13);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
+            // 
+            // Balance
+            // 
+            this.Balance.FormattingEnabled = true;
+            this.Balance.Location = new System.Drawing.Point(28, 30);
+            this.Balance.Name = "Balance";
+            this.Balance.Size = new System.Drawing.Size(408, 160);
+            this.Balance.TabIndex = 10;
             // 
             // Form2
             // 
@@ -213,5 +248,8 @@
         private System.Windows.Forms.Button ShowHistory;
         private System.Windows.Forms.Button Close;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button LogOut;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListBox Balance;
     }
 }

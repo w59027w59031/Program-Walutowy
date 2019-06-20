@@ -33,16 +33,21 @@ namespace Program_Walutowy
             form3.ShowDialog();
         }
 
+        private string _LooserId;
+        public string LooserId
+        {
+            get { return _LooserId; }
+        }
+
         private void Zaloguj_Click(object sender, EventArgs e)
         {
             try
             {
                 string login = LoginInput.Text;
                 string haslo = HasloInput.Text;
-                //takie jak tu https://dev.mysql.com/downloads/connector/net/6.10.html
                 String CONNSTRING = "Server=remotemysql.com; Database=fXFbJYw3Cb; Uid=fXFbJYw3Cb; Password=tjV0Oa4Jhr; port=3306;";
                 MySqlConnection mySqlConnection = new MySqlConnection(CONNSTRING);
-                MySqlCommand mySqlCommand = new MySqlCommand("select id,email,login,haslo,pln,data_rejestracji,data_ostatniego_log from uzytkownicy where login='" + login + "' and haslo='" + haslo + "'", mySqlConnection);
+                MySqlCommand mySqlCommand = new MySqlCommand("select id,email,login,haslo,data_rejestracji,data_ostatniego_log from uzytkownicy where login='" + login + "' and haslo='" + haslo + "'", mySqlConnection);
                 MySqlDataReader mySqlDataReader;
                 mySqlConnection.Open();
                 mySqlDataReader = mySqlCommand.ExecuteReader();
@@ -50,18 +55,20 @@ namespace Program_Walutowy
                 {
                     if (!mySqlDataReader.IsDBNull(0))
                     {
+                        _LooserId = mySqlDataReader.GetString(0);
                         this.Hide();
                         Form2 form2 = new Form2();
                         form2.JA.id = mySqlDataReader.GetString(0);
                         form2.JA.email = mySqlDataReader.GetString(1);
                         form2.JA.login = mySqlDataReader.GetString(2);
                         form2.JA.haslo = mySqlDataReader.GetString(3);
-                        form2.JA.pln = mySqlDataReader.GetInt32(4);
-                        form2.JA.data_rejestracji = mySqlDataReader.GetDateTime(5);
-                        form2.JA.data_ostatniego_log = mySqlDataReader.GetDateTime(6);
+                        form2.JA.data_rejestracji = mySqlDataReader.GetDateTime(4);
+                        form2.JA.data_ostatniego_log = mySqlDataReader.GetDateTime(5);
+                        form2.Parent = this;
 
                         form2.wyswietl();
-                        form2.ShowDialog();
+                        form2.Show();
+
                     }
                 }
                 mySqlConnection.Close();
@@ -70,6 +77,12 @@ namespace Program_Walutowy
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        public void Wyloguj()
+        {
+            LoginInput.Text = "";
+            HasloInput.Text = "";
         }
     }
 }

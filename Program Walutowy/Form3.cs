@@ -29,7 +29,7 @@ namespace Program_Walutowy
                 String CONNSTRING = "Server=remotemysql.com; Database=fXFbJYw3Cb; Uid=fXFbJYw3Cb; Password=tjV0Oa4Jhr; port=3306;";
                 MySqlConnection mySqlConnection = new MySqlConnection(CONNSTRING);
                 mySqlConnection.Open();
-                MySqlCommand mySqlCommand = new MySqlCommand($"insert into uzytkownicy (login,email,haslo,pln,data_rejestracji,data_ostatniego_log)values('{LoginIn.Text}','{EmailIn.Text}','{PasswdIn.Text}',1,STR_TO_DATE('01-01-2019','%d-%m-%Y'),STR_TO_DATE('01-01-2019','%d-%m-%Y'))", mySqlConnection);
+                MySqlCommand mySqlCommand = new MySqlCommand($"insert into uzytkownicy (login,email,haslo,data_rejestracji,data_ostatniego_log)values('{LoginIn.Text}','{EmailIn.Text}','{PasswdIn.Text}',STR_TO_DATE('01-01-2019','%d-%m-%Y'),STR_TO_DATE('01-01-2019','%d-%m-%Y'))", mySqlConnection);
                 mySqlCommand.ExecuteNonQuery();
                 mySqlConnection.Close();
             }
@@ -44,7 +44,7 @@ namespace Program_Walutowy
         private void Back_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Parent.ShowDialog();
+            Parent.Show();
         }
     }
 }

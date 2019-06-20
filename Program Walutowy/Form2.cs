@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
 using System.Net;
+using MySql.Data.MySqlClient;
 
 namespace Program_Walutowy
 {
@@ -35,6 +36,7 @@ namespace Program_Walutowy
         }
 
         public LUZER JA;
+        public Form Parent;
 
         public Form2()
         {
@@ -119,42 +121,47 @@ namespace Program_Walutowy
                 }
             }
             for (int i = 1; i < wwaluty.Length - 1; i++)
-            {                
+            {
                 Currency.Items.Add(
-                    wwaluty[i].nazwa_waluty.ToString()+"  |  "+
-                    wwaluty[i].przelicznik.ToString() + "  |  " + 
-                    wwaluty[i].kod_waluty.ToString() + "  |  " + 
-                    wwaluty[i].kurs_kupna.ToString() + "  |  " + 
+                    wwaluty[i].nazwa_waluty.ToString() + "  |  " +
+                    wwaluty[i].przelicznik.ToString() + "  |  " +
+                    wwaluty[i].kod_waluty.ToString() + "  |  " +
+                    wwaluty[i].kurs_kupna.ToString() + "  |  " +
                     wwaluty[i].kurs_sprzedazy.ToString()
                     );
-                /*MessageBox.Show(wwaluty[i].nazwa_waluty + @"
-" + wwaluty[i].przelicznik.ToString() + @"
-" + wwaluty[i].kod_waluty + @"
-" + wwaluty[i].kurs_kupna.ToString() + @"
-" + wwaluty[i].kurs_sprzedazy.ToString());*/
             }
+            //Stan konta
 
-
-            /*
-            xmlDocument.LoadXml(XMLStr);
-            foreach (XmlNode item in xmlDocument.ChildNodes)
+            try
             {
-                string str1 = GetChildren(item, "tabela_kursow", "tabela_kursow");
-                if (str1 != null && str1 != "" && str1.Length > 0)
+
+                string UserId = "";
+                foreach (var item in Application.OpenForms.OfType<MenuLogRej>())
                 {
-                    XmlDocument docdoc = new XmlDocument();
-                    docdoc.LoadXml(item.InnerXml);
-                    MessageBox.Show(docdoc.InnerXml);
-                    foreach (XmlNode item2 in docdoc.ChildNodes)
+                    UserId = item.LooserId;
+                }
+
+                String CONNSTRING = "Server=remotemysql.com; Database=fXFbJYw3Cb; Uid=fXFbJYw3Cb; Password=tjV0Oa4Jhr; port=3306;";
+                MySqlConnection mySqlConnection = new MySqlConnection(CONNSTRING);
+                MySqlCommand mySqlCommand = new MySqlCommand("select waluta, ilosc from pieniadze where id='"+ UserId + "'", mySqlConnection);
+                MySqlDataReader mySqlDataReader;
+                mySqlConnection.Open();
+                mySqlDataReader = mySqlCommand.ExecuteReader();
+                while (mySqlDataReader.Read())
+                {
+                    if (!mySqlDataReader.IsDBNull(0))
                     {
-                        string str2 = GetChildren(item2,"pozycja", "nazwa_waluty");
-                        if (str2 != null && str2 != "" && str2.Length > 0)
-                        {
-                            MessageBox.Show(str2);
-                        }
+                        Balance.Items.Add(
+                        mySqlDataReader.GetString(0) + "  |  " + mySqlDataReader.GetUInt32(1)
+                    );
                     }
                 }
-            }*/
+                mySqlConnection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private string GetChildren(XmlNode node, string element, string par)
@@ -187,10 +194,21 @@ namespace Program_Walutowy
         {
             Application.Exit();
         }
-        public void wyswietl() {
+        public void wyswietl()
+        {
             LoginS.Text = JA.login;
             EmailS.Text = JA.email;
             MoneyS.Text = JA.pln + "";
+        }
+
+        private void LogOut_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.Hide();
+            foreach (var item in Application.OpenForms.OfType<MenuLogRej>())
+            {
+                item.Wyloguj();
+            }
+            Parent.Show();
         }
     }
 }
