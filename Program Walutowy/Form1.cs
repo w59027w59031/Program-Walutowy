@@ -43,6 +43,7 @@ namespace Program_Walutowy
         {
             try
             {
+                bool bylo = false;
                 string login = LoginInput.Text;
                 string haslo = HasloInput.Text;
                 String CONNSTRING = "Server=remotemysql.com; Database=fXFbJYw3Cb; Uid=fXFbJYw3Cb; Password=tjV0Oa4Jhr; port=3306;";
@@ -55,6 +56,7 @@ namespace Program_Walutowy
                 {
                     if (!mySqlDataReader.IsDBNull(0))
                     {
+                        bylo = true;
                         _LooserId = mySqlDataReader.GetString(0);
                         this.Hide();
                         Form2 form2 = new Form2();
@@ -72,6 +74,9 @@ namespace Program_Walutowy
                     }
                 }
                 mySqlConnection.Close();
+                if (!bylo) {
+                    MessageBox.Show("Niepoprawne dane logowania!");
+                }
             }
             catch (Exception ex)
             {

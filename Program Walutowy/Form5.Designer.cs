@@ -73,7 +73,7 @@
             this.Controls.Add(this.TransHis);
             this.Controls.Add(this.TransLab);
             this.Name = "Form5";
-            this.Text = "Form5";
+            this.Text = "Program Walutowy";
             this.ResumeLayout(false);
 
         }
