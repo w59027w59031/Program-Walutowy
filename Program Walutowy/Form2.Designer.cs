@@ -57,9 +57,9 @@
             this.CurrencyLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.CurrencyLabel.Location = new System.Drawing.Point(25, 196);
             this.CurrencyLabel.Name = "CurrencyLabel";
-            this.CurrencyLabel.Size = new System.Drawing.Size(411, 13);
+            this.CurrencyLabel.Size = new System.Drawing.Size(399, 13);
             this.CurrencyLabel.TabIndex = 9;
-            this.CurrencyLabel.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
+            this.CurrencyLabel.Text = "nazwa waluty | przelicznik  | kod waluty | kurs kupna | kurs sprzedaży";
             // 
             // panel1
             // 
@@ -78,9 +78,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(25, 14);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(411, 13);
+            this.label1.Size = new System.Drawing.Size(68, 13);
             this.label1.TabIndex = 11;
-            this.label1.Text = "nazwa_waluty | przelicznik  | kod_waluty | kurs_kupna | kurs_sprzedaży";
+            this.label1.Text = "kod waluty";
             // 
             // Balance
             // 
