@@ -101,10 +101,8 @@ namespace Program_Walutowy
             {
                 if (CzyJestLiczba(MoneyBEx.Text))
                 {
-                    if (float.Parse(MoneyBEx.Text) > float.Parse(MoneyIn.Text))
+                    if (float.Parse(MoneyBEx.Text) <= float.Parse(MoneyIn.Text))
                     {
-                        MessageBox.Show("Nie wystarczające środki.");
-
                         if (float.Parse(MoneyBEx.Text) < 0)
                         {
                             MessageBox.Show("Wartość ujemna!");
@@ -127,6 +125,10 @@ namespace Program_Walutowy
                             mySqlCommand.ExecuteNonQuery();
                             mySqlConnection.Close();
                         }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nie wystarczające środki.");
                     }
                 }
                 else
