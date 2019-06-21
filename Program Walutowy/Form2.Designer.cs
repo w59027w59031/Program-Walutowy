@@ -108,7 +108,7 @@
             this.ShowHistory.Name = "ShowHistory";
             this.ShowHistory.Size = new System.Drawing.Size(255, 54);
             this.ShowHistory.TabIndex = 12;
-            this.ShowHistory.Text = "Historia Tranzakcji";
+            this.ShowHistory.Text = "Historia Transakcji";
             this.ShowHistory.UseVisualStyleBackColor = true;
             this.ShowHistory.MouseClick += new System.Windows.Forms.MouseEventHandler(this.ShowHistory_MouseClick);
             // 
